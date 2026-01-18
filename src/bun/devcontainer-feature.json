@@ -1,0 +1,17 @@
+{
+  "id": "bun",
+  "version": "1.0.0",
+  "name": "Bun",
+  "description": "Installs Bun JavaScript runtime and toolkit, and adds it to the shell PATH",
+  "documentationURL": "https://github.com/robertripoll/devcontainer-features/tree/main/src/bun",
+  "options": {
+    "version": {
+      "type": "string",
+      "default": "latest",
+      "description": "Version of Bun to install. Use 'latest' for the most recent version."
+    }
+  },
+  "installsAfter": [
+    "ghcr.io/devcontainers/features/common-utils"
+  ]
+}
