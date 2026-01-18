@@ -49,6 +49,11 @@ This feature installs Bun, a fast JavaScript runtime, package manager, test runn
 - The feature automatically detects the current user and installs Bun in their home directory
 - PATH is automatically added to common shell configuration files (bash, zsh)
 - The installation is idempotent - running it multiple times won't cause issues
+- Installation uses the official Bun installation script from https://bun.sh/install
+
+## Security
+
+This feature uses the official Bun installation script, which downloads and executes code from https://bun.sh. This is the recommended installation method by the Bun team. The script runs with the permissions of the container user.
 
 ## OS Support
 

@@ -75,8 +75,8 @@ add_to_path() {
         fi
     fi
     
-    # Check if Bun PATH is already configured
-    if ! grep -q "BUN_INSTALL.*\.bun" "${config_file}"; then
+    # Check if Bun PATH is already configured (check for the marker comment)
+    if ! grep -q "# Bun PATH configuration" "${config_file}"; then
         echo "" >> "${config_file}"
         echo "${marker}" >> "${config_file}"
         echo 'export BUN_INSTALL="$HOME/.bun"' >> "${config_file}"
